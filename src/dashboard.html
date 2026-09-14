@@ -11,25 +11,28 @@
 </head>
 <body>
 
-  <h1>📊 Monitoramento IoT em Tempo Real</h1>
-  <div id="status" class="status disconnected">Status: Desconectado</div>
+    <div class="tudo">
+        <h1>Monitoramento IoT em Tempo Real</h1>
+        <div id="status" class="status disconnected">Status: Desconectado</div>
+      
+        <div class="cards-container">
+          <div class="card">
+            <h3>Temperatura</h3>
+            <div class="value"><span id="temp">--</span> <span class="unit">°C</span></div>
+          </div>
+      
+          <div class="card">
+            <h3>Umidade</h3>
+            <div class="value"><span id="hum">--</span> <span class="unit">%</span></div>
+          </div>
+      
+          <div class="card">
+            <h3>Qualidade do Ar</h3>
+            <div class="value"><span id="air">--</span></div>
+          </div>
+        </div>
 
-  <div class="cards-container">
-    <div class="card">
-      <h3>Temperatura</h3>
-      <div class="value"><span id="temp">--</span> <span class="unit">°C</span></div>
     </div>
-
-    <div class="card">
-      <h3>Umidade</h3>
-      <div class="value"><span id="hum">--</span> <span class="unit">%</span></div>
-    </div>
-
-    <div class="card">
-      <h3>Qualidade do Ar</h3>
-      <div class="value"><span id="air">--</span></div>
-    </div>
-  </div>
 
   <!-- JS externo -->
   <script src="../index.js"></script>

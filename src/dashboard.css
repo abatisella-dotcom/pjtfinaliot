@@ -1,61 +1,83 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f7f6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #ffd880;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../assets/IMG/img1.jpg);
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.tudo{
+    background-color: #feb5c0;
+    width: 900px;
+    height: 450px;
+    border-radius: 20px;
+    
 }
 
 h1 {
-  color: #333;
+    color: #CF453A;
+    font-size: 45px;
+    text-align: center;
 }
 
 .status {
-  font-weight: bold;
-  margin-bottom: 20px;
-  padding: 8px 16px;
-  border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-align: center;
 }
 
 .connected {
-  background-color: #d4edda;
-  color: #155724;
+    background-color: #ffd880;
+    color: #AEAA82;
 }
 
 .disconnected {
-  background-color: #f8d7da;
-  color: #721c24;
+    background-color: #f8d7da;
+    color: #CF453A;
 }
 
 .cards-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  padding: 20px;
-  width: 200px;
-  text-align: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
 }
 
 .card h3 {
-  margin-top: 0;
-  color: #666;
+    margin-top: 0;
+    color: #CF453A;
+    font-size: 25px;
 }
 
 .card .value {
-  font-size: 2.2em;
-  font-weight: bold;
-  color: #007bff;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #ffd880;
 }
 
 .card .unit {
-  font-size: 0.5em;
-  color: #888;
+    font-size: 0.5em;
+    color: #CF453A;
 }
