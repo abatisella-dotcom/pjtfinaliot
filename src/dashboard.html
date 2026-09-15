@@ -6,11 +6,27 @@
   <title>Dashboard IoT - ESP32 + Mosquitto</title>
   <!-- Biblioteca Paho MQTT via CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
-  <!-- CSS externo -->
+ 
   <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
 
+    <header>
+        <div id="logo">
+            <div id="icone"></div>
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="dashboard.html">dashboard</a></li>
+                <li><a href="sobreProjeto.html">sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<main>  
     <div class="tudo">
         <h1>Monitoramento IoT em Tempo Real</h1>
         <div class="alinhamento"> 
@@ -37,8 +53,9 @@
         </div>
 
     </div>
+</main>
 
-  <!-- JS externo -->
+  
   <script src="../index.js"></script>
 </body>
 </html>
