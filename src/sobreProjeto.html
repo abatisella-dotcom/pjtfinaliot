@@ -1,36 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="sobreProjeto.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre o Projeto - Makal Sensor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..1000;1,9..40,300..1000&family=Geologica:wght,CRSV@100..900,0&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sobreProjeto.css">
 </head>
-
 <body>
-    <header>
-        <div id="logo">
-            <div id="icone"></div>
-        </div>
 
-        <nav id="menu">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="dashboard.html">dashboard</a></li>
-                <li><a href="sobreProjeto.html">sobre</a></li>
-            </ul>
-        </nav>
+  <!-- Elementos Decorativos de Fundo (Estrelas Suaves) -->
+  <img src="../assets/IMG/EstrelaRosa.png" alt="" class="bg-decor-star star-top-right" aria-hidden="true" />
+  <img src="../assets/IMG/estrelaAmarelo.png" alt="" class="bg-decor-star star-bottom-left" aria-hidden="true" />
+
+  <!-- Container Principal da Página (Alinhado perfeitamente com Home e Dashboard) -->
+  <div class="page-container">
+
+    <!-- Header de Navegação Padronizado -->
+    <header class="navbar-home">
+      <a href="../index.html" class="logo-btn" title="Início">
+        <div class="logo-icon"></div>
+      </a>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="../index.html">home</a></li>
+          <li><a href="dashboard.html">dashboard</a></li>
+          <li><a href="sobreProjeto.html" class="active">sobre</a></li>
+        </ul>
+      </nav>
     </header>
 
-<div id="conteudo1"> 
-    <h1>SISTEMA DE MONITORAMENTO COM IOT</h1>
-    <p>O projeto consiste em um sistema capaz de monitorar em tempo real condições ambientais por meio de sensores de temperatura, umidade e gases. Os dados coletados são enviados para uma plataforma web, permitindo que os usuários acompanhem as informações de forma prática e visual através de gráficos, indicadores e alertas.
-</p>
-</div>
+    <!-- Conteúdo da Página -->
+    <main class="content-flow">
+
+      <!-- ================= 1. HERO: APRESENTAÇÃO DO SISTEMA ================= -->
+      <section class="hero-card">
+        <div class="hero-content">
+          <div class="tag-badge">PROJETO IOT</div>
+          <h1 class="hero-title">Sistema de Monitoramento com IoT</h1>
+          <p class="hero-desc">
+            O projeto consiste em um sistema capaz de monitorar em tempo real condições ambientais por meio de sensores de temperatura, umidade e gases. Os dados coletados são enviados para uma plataforma web, permitindo que os usuários acompanhem as informações de forma prática e visual através de gráficos, indicadores e alertas.
+          </p>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-frame">
+            <img src="../assets/IMG/img1.jpg" alt="Ilustração do projeto Makal Sensor" class="visual-img">
+          </div>
+        </div>
+      </section>
 
 
+      <!-- ================= 2. OBJETIVOS & TECNOLOGIAS (BENTO GRID) ================= -->
+      <section class="bento-grid">
+        
+        <!-- Card: Objetivos -->
+        <div class="card card-objetivos">
+          <div class="card-header">
+            <span class="card-pill yellow-pill">Metas</span>
+            <h2 class="card-title">Objetivos</h2>
+          </div>
+          <ul class="custom-list">
+            <li>
+              <span class="check-bullet">✓</span>
+              <span>Monitorar temperatura, umidade e qualidade do ar.</span>
+            </li>
+            <li>
+              <span class="check-bullet">✓</span>
+              <span>Coletar e processar dados em tempo real.</span>
+            </li>
+            <li>
+              <span class="check-bullet">✓</span>
+              <span>Exibir informações em uma interface web intuitiva.</span>
+            </li>
+            <li>
+              <span class="check-bullet">✓</span>
+              <span>Armazenar histórico para consultas futuras.</span>
+            </li>
+            <li>
+              <span class="check-bullet">✓</span>
+              <span>Gerar alertas imediatos quando valores críticos forem detectados.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card: Tecnologias Utilizadas -->
+        <div class="card card-tecnologias">
+          <div class="card-header">
+            <span class="card-pill pink-pill">Stack</span>
+            <h2 class="card-title">Tecnologias Utilizadas</h2>
+          </div>
+          
+          <div class="tech-subsections">
+            <!-- Software -->
+            <div class="tech-block">
+              <h3 class="tech-group-title">SOFTWARE</h3>
+              <div class="tags-cloud">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">MQTT</span>
+                <span class="tech-tag">Mosquitto</span>
+                <span class="tech-tag">Git / GitHub</span>
+              </div>
+            </div>
+
+            <!-- Hardware -->
+            <div class="tech-block">
+              <h3 class="tech-group-title">HARDWARE</h3>
+              <div class="tags-cloud">
+                <span class="tech-tag">ESP32 ou Arduino</span>
+                <span class="tech-tag">Sensor de Temp. e Umidade</span>
+                <span class="tech-tag">Sensor de Gases</span>
+                <span class="tech-tag">Protoboard e Jumpers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- ================= 3. ARQUITETURA MQTT & MOSQUITTO ================= -->
+      <section class="card mqtt-section">
+        
+        <div class="mqtt-header">
+          <span class="card-pill red-pill">Comunicação</span>
+          <h2 class="section-main-title">Protocolo MQTT & Broker Mosquitto</h2>
+          <p class="section-lead">
+            O <strong>MQTT (Message Queuing Telemetry Transport)</strong> é um protocolo leve projetado para IoT, baseado no modelo de <em>Publicação e Assinatura (Publish/Subscribe)</em>.
+          </p>
+        </div>
+
+        <!-- Principais Vantagens MQTT -->
+        <div class="mqtt-features-row">
+          <div class="feature-item">
+            <div class="feature-num">01</div>
+            <div class="feature-text">
+              <h4>Publicação</h4>
+              <p>Os sensores coletam dados e enviam informações para tópicos específicos no broker.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-num">02</div>
+            <div class="feature-text">
+              <h4>Intermediação</h4>
+              <p>O <strong>Mosquitto</strong> organiza e gerencia a fila de mensagens distribuindo aos clientes.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-num">03</div>
+            <div class="feature-text">
+              <h4>Assinatura</h4>
+              <p>Os clientes conectados recebem os dados instantaneamente sem precisar requisitar a cada instante.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 3 Pilares do Mosquitto -->
+        <div class="mosquitto-wrapper">
+          <h3 class="mosquitto-subheading">Como o broker Mosquitto atua no sistema:</h3>
+          
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-badge">Passo 1</div>
+              <p class="step-desc">Recebe os dados brutos enviados pelos sensores em tempo real.</p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-badge">Passo 2</div>
+              <p class="step-desc">Organiza e categoriza as mensagens em tópicos estruturados.</p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-badge">Passo 3</div>
+              <p class="step-desc">Distribui as informações automaticamente para os clientes conectados.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
 
 </body>
-
 </html>

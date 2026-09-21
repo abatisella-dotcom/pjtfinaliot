@@ -11,49 +11,47 @@
 </head>
 <body>
 
-    <header>
-        <div id="logo">
-            <div id="icone"></div>
-        </div>
+    <div class="dashboard-page-container">
+        <!-- Header de Navegação Padronizado -->
+        <header class="navbar-home">
+            <a href="../index.html" class="logo-btn" title="Início">
+                <div class="logo-icon"></div>
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="dashboard.html" class="active">dashboard</a></li>
+                    <li><a href="sobreProjeto.html">sobre</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <nav id="menu">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="dashboard.html">dashboard</a></li>
-                <li><a href="sobreProjeto.html">sobre</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-<main>  
-    <div class="tudo">
-        <h1>Monitoramento IoT em Tempo Real</h1>
-        <div class="alinhamento"> 
-
-            
-            <div id="status" class="status disconnected">Status: Desconectado</div>
-        </div>
-      
-        <div class="cards-container">
-          <div class="card">
-            <h3>Temperatura</h3>
-            <div class="value"><span id="temp">--</span> <span class="unit">°C</span></div>
-          </div>
-      
-          <div class="card">
-            <h3>Umidade</h3>
-            <div class="value"><span id="hum">--</span> <span class="unit">%</span></div>
-          </div>
-      
-          <div class="card">
-            <h3>Qualidade do Ar</h3>
-            <div class="value"><span id="air">--</span></div>
-          </div>
-        </div>
-
+        <main>  
+            <div class="tudo">
+                <h1>Monitoramento IoT em Tempo Real</h1>
+                <div class="alinhamento"> 
+                    <div id="status" class="status disconnected">Status: Desconectado</div>
+                </div>
+              
+                <div class="cards-container">
+                  <div class="card">
+                    <h3>Temperatura</h3>
+                    <div class="value"><span id="temp">--</span> <span class="unit">°C</span></div>
+                  </div>
+              
+                  <div class="card">
+                    <h3>Umidade</h3>
+                    <div class="value"><span id="hum">--</span> <span class="unit">%</span></div>
+                  </div>
+              
+                  <div class="card">
+                    <h3>Qualidade do Ar</h3>
+                    <div class="value"><span id="air">--</span></div>
+                  </div>
+                </div>
+            </div>
+        </main>
     </div>
-</main>
 
   
   <script src="../index.js"></script>

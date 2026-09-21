@@ -1,24 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Final IoT</title>
-    <link rel="stylesheet" href="/style.css">
+  <title>Makal Sensor - Descubra com segurança</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..1000;1,9..40,300..1000&family=Geologica:wght,CRSV@100..900,0&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="quadro1">
-    <h1 class="titulo"> Makal Sensor</h1>
-    <h2 class="subtitulo">Descubra com segurança</h2>
-    </div>
-    <div class="quadro2">
-      <img src="" alt="">
-    </div>
-    <div class="quadro3">
-      <p class="gas">Sensor de Gás</p>
-      <p class="temp">Sensor de Gás</p>
-      <p class="umidade">Sensor de Gás</p>
-    </div>
-  
+
+  <!-- Card Principal Centralizado -->
+  <main class="main-wrapper">
+
+    <!-- Seção Superior: Grid com Card Marca e Card Ilustração -->
+    <section class="top-section">
+      
+      <!-- Card Esquerda: Marca e Navegação -->
+      <div class="card-brand">
+        
+        <!-- Header / Navbar -->
+        <header class="navbar-home">
+          <a href="index.html" class="logo-btn" title="Início">
+            <div class="logo-icon"></div>
+          </a>
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="index.html" class="active">home</a></li>
+              <li><a href="src/dashboard.html">dashboard</a></li>
+              <li><a href="src/sobreProjeto.html">sobre</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- Conteúdo Central da Marca -->
+        <div class="brand-hero">
+          <h1 class="brand-title">Makal Sensor</h1>
+          <p class="brand-subtitle">Descubra com segurança</p>
+        </div>
+
+      </div>
+
+      <!-- Card Direita: Ilustração com Moldura Terracota -->
+      <div class="card-frame">
+        <div class="inner-frame">
+          <img src="assets/IMG/img1.jpg" alt="Padrão decorativo floral Makal Sensor" class="frame-image">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Seção Inferior: Barra Amarela com 3 Sensores -->
+    <section class="bottom-section">
+      
+      <div class="sensor-card">
+        <h2 class="sensor-title">Sensor de Gás</h2>
+      </div>
+
+      <div class="sensor-card">
+        <h2 class="sensor-title">Sensor de<br>temperatura</h2>
+      </div>
+
+      <div class="sensor-card">
+        <h2 class="sensor-title">Sensor de<br>Umidade</h2>
+      </div>
+
+    </section>
+
+  </main>
+
 </body>
 </html>
